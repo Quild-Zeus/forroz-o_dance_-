@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Forrozão Dance +</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="admin-body">
+
+<div class="admin-container">
+
+    <h1>Painel Administrativo</h1>
+
+    <div class="login-box" id="login-box">
+    <input type="password" id="senha" placeholder="Digite a senha">
+    <button id="btn-entrar" onclick="verificarSenha()">Entrar</button>
+</div>
+
+
+<button id="btn-voltar" onclick="voltar()" style="display:none;">
+    Voltar
+</button>
+
+    <div id="painel" class="painel-admin" style="display:none;">
+
+        <h2>Adicionar Evento</h2>
+
+        <input type="date" id="data" placeholder="Data (ex: 10/05/2026)">
+        <input type="text" id="evento" placeholder="Descrição do evento">
+
+        <button onclick="adicionarEvento()">Adicionar Evento</button>
+
+        <h2>Eventos cadastrados</h2>
+
+        <div id="lista-admin"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

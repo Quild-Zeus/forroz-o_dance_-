@@ -1,0 +1,289 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000, #1a1a1a);
+    color: white;
+    text-align: center;
+}
+
+body {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    background-color: #000;
+    padding: 15px;
+}
+
+.logo {
+    width: 300px;
+    margin-top: -15px;
+}
+
+header h1 {
+    margin: 0;
+    margin-top: -50px;
+    color: #ffcc00;
+    font-size: 32px;
+}
+
+header p {
+    color: #ffffff;
+}
+
+.hero {
+    padding: 60px 20px;
+    filter: brightness(60%) blur(0px);
+    transition: filter 0.3s ease;
+    background: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d') center/cover;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: rgb(229, 255, 0);
+    border-radius: 10%;
+        background: linear-gradient(90deg, #27210b52, #ff66002f);
+    font: bold 36px 'Arial Black', sans-serif;
+        -webkit-text-stroke-width: 0.60px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    
+}
+
+.hero p {
+    font-size: 24px;
+    color: #f3f2f2;
+    border-radius: 10%;
+    background: linear-gradient(90deg, #0a31072f, #ff660013);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font: bold 20px 'Arial Black', sans-serif;
+    -webkit-text-stroke-width: 0.60px; 
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+section {
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: scale(1.01);
+}
+
+section h2 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #000;
+    padding: 10px;
+    margin-top: 30px;
+    color: #aaa;
+    font-size: 14px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: static; /* força comportamento normal */
+}
+
+.admin-link {
+    font-size: 12px;
+    color: #333;
+    text-decoration: none;
+
+    position: static !important;
+} /* MUITO IMPORTANTE */
+
+
+.admin-link:hover {
+    color: #ffcc00;
+}
+.admin-link {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 12px;
+    color: #333;
+    text-decoration: none;
+}
+
+.admin-link:hover {
+    color: #ffcc00;
+}
+
+.evento {
+    background-color: #222;
+    margin: 10px auto;
+    padding: 15px;
+    width: 80%;
+    border-radius: 8px;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+#admin-area {
+    margin-top: 20px;
+}
+
+#admin-area input {
+    padding: 8px;
+    margin: 5px;
+}
+
+#admin-area button {
+    padding: 8px 12px;
+    margin: 5px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+}
+
+.admin-link {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #444;
+    text-decoration: none;
+}
+
+.admin-link:hover {
+    color: #ffcc00;
+}
+
+/* ===== ADMIN ===== */
+
+.admin-body {
+    background: linear-gradient(to bottom, #000, #1a1a1a);
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.admin-container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.admin-container h1 {
+    color: #ffcc00;
+}
+
+.login-box {
+    margin-bottom: 20px;
+}
+
+.admin-container input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.admin-container button {
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.admin-container button:hover {
+    background-color: #e6b800;
+}
+
+.painel-admin {
+    margin-top: 20px;
+}
+
+#lista-admin .evento {
+    background-color: #222;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+#btn-voltar {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-voltar:hover {
+    background-color: #666;
+}
+
+.evento button {
+    margin: 5px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.evento button:first-child {
+    background-color: #3498db; /* editar */
+    color: white;
+}
+
+.evento button:last-child {
+    background-color: #e74c3c; /* remover */
+    color: white;
+}
